@@ -25,6 +25,17 @@
 		EBEED64121D8EC7600FFDC95 /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = EBEED63121D8EC7600FFDC95 /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBEED64421D8EC7600FFDC95 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEED62F21D8EC7600FFDC95 /* Domain.framework */; };
 		EBEED64521D8EC7600FFDC95 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBEED62F21D8EC7600FFDC95 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EBEED64F21D8EE2100FFDC95 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEED64E21D8EE2100FFDC95 /* Address.swift */; };
+		EBEED65121D8F0CE00FFDC95 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEED65021D8F0CE00FFDC95 /* Location.swift */; };
+		EBEED65321D8F20C00FFDC95 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEED65221D8F20C00FFDC95 /* Album.swift */; };
+		EBEED65521D8F25F00FFDC95 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEED65421D8F25F00FFDC95 /* Comment.swift */; };
+		EBEED65721D8F2C500FFDC95 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEED65621D8F2C500FFDC95 /* Company.swift */; };
+		EBEED65921D8F2FE00FFDC95 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEED65821D8F2FE00FFDC95 /* Photo.swift */; };
+		EBEED65B21D8F34200FFDC95 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEED65A21D8F34200FFDC95 /* Post.swift */; };
+		EBEED65D21D8F5F900FFDC95 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEED65C21D8F5F900FFDC95 /* Todo.swift */; };
+		EBEED65F21D8F62C00FFDC95 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEED65E21D8F62C00FFDC95 /* User.swift */; };
+		EBEED66221D8F69A00FFDC95 /* PostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEED66121D8F69A00FFDC95 /* PostsUseCase.swift */; };
+		EBEED66421D8F70800FFDC95 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEED66321D8F70800FFDC95 /* UseCaseProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +124,17 @@
 		EBEED63721D8EC7600FFDC95 /* DomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEED63E21D8EC7600FFDC95 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
 		EBEED64021D8EC7600FFDC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBEED64E21D8EE2100FFDC95 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		EBEED65021D8F0CE00FFDC95 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EBEED65221D8F20C00FFDC95 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		EBEED65421D8F25F00FFDC95 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		EBEED65621D8F2C500FFDC95 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		EBEED65821D8F2FE00FFDC95 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		EBEED65A21D8F34200FFDC95 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EBEED65C21D8F5F900FFDC95 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		EBEED65E21D8F62C00FFDC95 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EBEED66121D8F69A00FFDC95 /* PostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsUseCase.swift; sourceTree = "<group>"; };
+		EBEED66321D8F70800FFDC95 /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 		ED0ABACD134C1C73326F1C9B /* Pods-CleanArchitectureUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArchitectureUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanArchitectureUITests/Pods-CleanArchitectureUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1362F908C7F117F90E8C182 /* Pods_CleanArchitectureUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArchitectureUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -253,6 +275,8 @@
 		EBEED63021D8EC7600FFDC95 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				EBEED64D21D8EDFB00FFDC95 /* Entries */,
+				EBEED66021D8F67700FFDC95 /* UseCases */,
 				EBEED63121D8EC7600FFDC95 /* Domain.h */,
 				EBEED63221D8EC7600FFDC95 /* Info.plist */,
 			);
@@ -266,6 +290,31 @@
 				EBEED64021D8EC7600FFDC95 /* Info.plist */,
 			);
 			path = DomainTests;
+			sourceTree = "<group>";
+		};
+		EBEED64D21D8EDFB00FFDC95 /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				EBEED64E21D8EE2100FFDC95 /* Address.swift */,
+				EBEED65221D8F20C00FFDC95 /* Album.swift */,
+				EBEED65421D8F25F00FFDC95 /* Comment.swift */,
+				EBEED65621D8F2C500FFDC95 /* Company.swift */,
+				EBEED65021D8F0CE00FFDC95 /* Location.swift */,
+				EBEED65821D8F2FE00FFDC95 /* Photo.swift */,
+				EBEED65A21D8F34200FFDC95 /* Post.swift */,
+				EBEED65C21D8F5F900FFDC95 /* Todo.swift */,
+				EBEED65E21D8F62C00FFDC95 /* User.swift */,
+			);
+			path = Entries;
+			sourceTree = "<group>";
+		};
+		EBEED66021D8F67700FFDC95 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				EBEED66121D8F69A00FFDC95 /* PostsUseCase.swift */,
+				EBEED66321D8F70800FFDC95 /* UseCaseProvider.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +454,7 @@
 					};
 					EBEED62E21D8EC7600FFDC95 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					EBEED63621D8EC7600FFDC95 = {
 						CreatedOnToolsVersion = 10.0;
@@ -675,6 +725,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBEED65921D8F2FE00FFDC95 /* Photo.swift in Sources */,
+				EBEED65121D8F0CE00FFDC95 /* Location.swift in Sources */,
+				EBEED64F21D8EE2100FFDC95 /* Address.swift in Sources */,
+				EBEED66421D8F70800FFDC95 /* UseCaseProvider.swift in Sources */,
+				EBEED65D21D8F5F900FFDC95 /* Todo.swift in Sources */,
+				EBEED65321D8F20C00FFDC95 /* Album.swift in Sources */,
+				EBEED65F21D8F62C00FFDC95 /* User.swift in Sources */,
+				EBEED65721D8F2C500FFDC95 /* Company.swift in Sources */,
+				EBEED66221D8F69A00FFDC95 /* PostsUseCase.swift in Sources */,
+				EBEED65B21D8F34200FFDC95 /* Post.swift in Sources */,
+				EBEED65521D8F25F00FFDC95 /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,6 +917,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C84FE5A2C9CD023958089DD7 /* Pods-CleanArchitecture.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QWZQFWGZMG;
@@ -875,6 +937,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B276D69C6FB8C5307FBBC0E /* Pods-CleanArchitecture.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QWZQFWGZMG;
@@ -980,6 +1043,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5F0D1A862855C883664DEF67 /* Pods-Domain.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -998,6 +1062,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.roverdream.cleanarchitecture.domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1009,6 +1074,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7AE383E73BF3A314B050C7E /* Pods-Domain.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
