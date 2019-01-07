@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDAddress" representedClassName=".CDAddress" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="street" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="suite" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zipcode" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="geo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDLocation" inverseName="address" inverseEntity="CDLocation" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDUser" inverseName="address" inverseEntity="CDUser" syncable="YES"/>
+    </entity>
+    <entity name="CDAlbum" representedClassName=".CDAlbum" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <fetchIndex name="byUidIndex">
+            <fetchIndexElement property="uid" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="CDComment" representedClassName=".CDComment" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <fetchIndex name="byUidIndex">
+            <fetchIndexElement property="uid" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="CDCompany" representedClassName=".CDCompany" syncable="YES">
+        <attribute name="bs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="catchPhrase" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDUser" inverseName="company" inverseEntity="CDUser" syncable="YES"/>
+    </entity>
+    <entity name="CDLocation" representedClassName=".CDLocation" syncable="YES">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="address" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDAddress" inverseName="geo" inverseEntity="CDAddress" syncable="YES"/>
+    </entity>
+    <entity name="CDPhoto" representedClassName=".CDPhoto" syncable="YES">
+        <attribute name="albumId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <fetchIndex name="byUidIndex">
+            <fetchIndexElement property="uid" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="CDPost" representedClassName=".CDPost" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <fetchIndex name="byUidIndex">
+            <fetchIndexElement property="uid" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="CDTodo" representedClassName=".CDTodo" syncable="YES">
+        <attribute name="completed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <fetchIndex name="byUidIndex">
+            <fetchIndexElement property="uid" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <entity name="CDUser" representedClassName=".CDUser" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="address" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDAddress" inverseName="user" inverseEntity="CDAddress" syncable="YES"/>
+        <relationship name="company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDCompany" inverseName="user" inverseEntity="CDCompany" syncable="YES"/>
+        <fetchIndex name="byUidIndex">
+            <fetchIndexElement property="uid" type="Binary" order="ascending"/>
+        </fetchIndex>
+    </entity>
+    <elements>
+        <element name="CDAddress" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="CDAlbum" positionX="95.46875" positionY="-8.6953125" width="128" height="90"/>
+        <element name="CDComment" positionX="18" positionY="9" width="128" height="120"/>
+        <element name="CDCompany" positionX="27" positionY="45" width="128" height="105"/>
+        <element name="CDLocation" positionX="36" positionY="54" width="128" height="90"/>
+        <element name="CDPhoto" positionX="45" positionY="63" width="128" height="120"/>
+        <element name="CDPost" positionX="54" positionY="99" width="128" height="120"/>
+        <element name="CDTodo" positionX="63" positionY="126" width="128" height="105"/>
+        <element name="CDUser" positionX="72" positionY="135" width="128" height="165"/>
+    </elements>
+</model>
